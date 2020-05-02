@@ -1,0 +1,18 @@
+C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\bin\Debug\netcoreapp3.1\Sudoku Solver.exe
+C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\bin\Debug\netcoreapp3.1\Sudoku Solver.deps.json
+C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\bin\Debug\netcoreapp3.1\Sudoku Solver.runtimeconfig.json
+C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\bin\Debug\netcoreapp3.1\Sudoku Solver.runtimeconfig.dev.json
+C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\bin\Debug\netcoreapp3.1\Sudoku Solver.dll
+C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\bin\Debug\netcoreapp3.1\Sudoku Solver.pdb
+C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\obj\Debug\netcoreapp3.1\Sudoku Solver.csprojAssemblyReference.cache
+C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\obj\Debug\netcoreapp3.1\Sudoku Solver_MarkupCompile.cache
+C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\obj\Debug\netcoreapp3.1\Sudoku Solver_MarkupCompile.lref
+C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\obj\Debug\netcoreapp3.1\Sudoku Solver.g.resources
+C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\obj\Debug\netcoreapp3.1\Sudoku Solver.AssemblyInfoInputs.cache
+C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\obj\Debug\netcoreapp3.1\Sudoku Solver.AssemblyInfo.cs
+C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\obj\Debug\netcoreapp3.1\Sudoku Solver.dll
+C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\obj\Debug\netcoreapp3.1\Sudoku Solver.pdb
+C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\obj\Debug\netcoreapp3.1\Sudoku Solver.genruntimeconfig.cache

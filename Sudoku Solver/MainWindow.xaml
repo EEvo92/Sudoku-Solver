@@ -1,0 +1,133 @@
+﻿<Window x:Class="Sudoku_Solver.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        DataContext="SudokuSolver"
+        xmlns:local="clr-namespace:Sudoku_Solver"
+        mc:Ignorable="d"
+        Title="Sudoku Solver 1.0" Height="720" Width="1280">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="550"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+         <!-- Row 1--> 
+        <TextBox Grid.Row=" 1" Grid.Column="1" x:Name ="Celda11"></TextBox>
+        <TextBox Grid.Row=" 1" Grid.Column="2" x:Name ="Celda12"></TextBox>
+        <TextBox Grid.Row=" 1" Grid.Column="3" x:Name ="Celda13"></TextBox>
+        <TextBox Grid.Row=" 1" Grid.Column="4" x:Name ="Celda14"></TextBox>
+        <TextBox Grid.Row=" 1" Grid.Column="5" x:Name ="Celda15"></TextBox>
+        <TextBox Grid.Row=" 1" Grid.Column="6" x:Name ="Celda16"></TextBox>
+        <TextBox Grid.Row=" 1" Grid.Column="7" x:Name ="Celda17"></TextBox>
+        <TextBox Grid.Row=" 1" Grid.Column="8" x:Name ="Celda18"></TextBox>
+        <TextBox Grid.Row=" 1" Grid.Column="9" x:Name ="Celda19"></TextBox>
+        <!-- Row 2-->
+        <TextBox Grid.Row=" 2" Grid.Column="1" x:Name ="Celda21"></TextBox>
+        <TextBox Grid.Row=" 2" Grid.Column="2" x:Name ="Celda22"></TextBox>
+        <TextBox Grid.Row=" 2" Grid.Column="3" x:Name ="Celda23"></TextBox>
+        <TextBox Grid.Row=" 2" Grid.Column="4" x:Name ="Celda24"></TextBox>
+        <TextBox Grid.Row=" 2" Grid.Column="5" x:Name ="Celda25"></TextBox>
+        <TextBox Grid.Row=" 2" Grid.Column="6" x:Name ="Celda26"></TextBox>
+        <TextBox Grid.Row=" 2" Grid.Column="7" x:Name ="Celda27"></TextBox>
+        <TextBox Grid.Row=" 2" Grid.Column="8" x:Name ="Celda28"></TextBox>
+        <TextBox Grid.Row=" 2" Grid.Column="9" x:Name ="Celda29"></TextBox>
+        <!-- Row 3-->
+        <TextBox Grid.Row=" 3" Grid.Column="1" x:Name ="Celda31"></TextBox>
+        <TextBox Grid.Row=" 3" Grid.Column="2" x:Name ="Celda32"></TextBox>
+        <TextBox Grid.Row=" 3" Grid.Column="3" x:Name ="Celda33"></TextBox>
+        <TextBox Grid.Row=" 3" Grid.Column="4" x:Name ="Celda34"></TextBox>
+        <TextBox Grid.Row=" 3" Grid.Column="5" x:Name ="Celda35"></TextBox>
+        <TextBox Grid.Row=" 3" Grid.Column="6" x:Name ="Celda36"></TextBox>
+        <TextBox Grid.Row=" 3" Grid.Column="7" x:Name ="Celda37"></TextBox>
+        <TextBox Grid.Row=" 3" Grid.Column="8" x:Name ="Celda38"></TextBox>
+        <TextBox Grid.Row=" 3" Grid.Column="9" x:Name ="Celda39"></TextBox>
+        <!-- Row 4-->
+        <TextBox Grid.Row=" 4" Grid.Column="1" x:Name ="Celda41"></TextBox>
+        <TextBox Grid.Row=" 4" Grid.Column="2" x:Name ="Celda42"></TextBox>
+        <TextBox Grid.Row=" 4" Grid.Column="3" x:Name ="Celda43"></TextBox>
+        <TextBox Grid.Row=" 4" Grid.Column="4" x:Name ="Celda44"></TextBox>
+        <TextBox Grid.Row=" 4" Grid.Column="5" x:Name ="Celda45"></TextBox>
+        <TextBox Grid.Row=" 4" Grid.Column="6" x:Name ="Celda46"></TextBox>
+        <TextBox Grid.Row=" 4" Grid.Column="7" x:Name ="Celda47"></TextBox>
+        <TextBox Grid.Row=" 4" Grid.Column="8" x:Name ="Celda48"></TextBox>
+        <TextBox Grid.Row=" 4" Grid.Column="9" x:Name ="Celda49"></TextBox>
+        <!-- Row 5-->
+        <TextBox Grid.Row=" 5" Grid.Column="1" x:Name ="Celda51"></TextBox>
+        <TextBox Grid.Row=" 5" Grid.Column="2" x:Name ="Celda52"></TextBox>
+        <TextBox Grid.Row=" 5" Grid.Column="3" x:Name ="Celda53"></TextBox>
+        <TextBox Grid.Row=" 5" Grid.Column="4" x:Name ="Celda54"></TextBox>
+        <TextBox Grid.Row=" 5" Grid.Column="5" x:Name ="Celda55"></TextBox>
+        <TextBox Grid.Row=" 5" Grid.Column="6" x:Name ="Celda56"></TextBox>
+        <TextBox Grid.Row=" 5" Grid.Column="7" x:Name ="Celda57"></TextBox>
+        <TextBox Grid.Row=" 5" Grid.Column="8" x:Name ="Celda58"></TextBox>
+        <TextBox Grid.Row=" 5" Grid.Column="9" x:Name ="Celda59"></TextBox>
+        <!-- Row 6-->
+        <TextBox Grid.Row=" 6" Grid.Column="1" x:Name ="Celda61"></TextBox>
+        <TextBox Grid.Row=" 6" Grid.Column="2" x:Name ="Celda62"></TextBox>
+        <TextBox Grid.Row=" 6" Grid.Column="3" x:Name ="Celda63"></TextBox>
+        <TextBox Grid.Row=" 6" Grid.Column="4" x:Name ="Celda64"></TextBox>
+        <TextBox Grid.Row=" 6" Grid.Column="5" x:Name ="Celda65"></TextBox>
+        <TextBox Grid.Row=" 6" Grid.Column="6" x:Name ="Celda66"></TextBox>
+        <TextBox Grid.Row=" 6" Grid.Column="7" x:Name ="Celda67"></TextBox>
+        <TextBox Grid.Row=" 6" Grid.Column="8" x:Name ="Celda68"></TextBox>
+        <TextBox Grid.Row=" 6" Grid.Column="9" x:Name ="Celda69"></TextBox>
+        <!-- Row 7-->
+        <TextBox Grid.Row=" 7" Grid.Column="1" x:Name ="Celda71"></TextBox>
+        <TextBox Grid.Row=" 7" Grid.Column="2" x:Name ="Celda72"></TextBox>
+        <TextBox Grid.Row=" 7" Grid.Column="3" x:Name ="Celda73"></TextBox>
+        <TextBox Grid.Row=" 7" Grid.Column="4" x:Name ="Celda74"></TextBox>
+        <TextBox Grid.Row=" 7" Grid.Column="5" x:Name ="Celda75"></TextBox>
+        <TextBox Grid.Row=" 7" Grid.Column="6" x:Name ="Celda76"></TextBox>
+        <TextBox Grid.Row=" 7" Grid.Column="7" x:Name ="Celda77"></TextBox>
+        <TextBox Grid.Row=" 7" Grid.Column="8" x:Name ="Celda78"></TextBox>
+        <TextBox Grid.Row=" 7" Grid.Column="9" x:Name ="Celda79"></TextBox>
+        <!-- Row 8-->
+        <TextBox Grid.Row=" 8" Grid.Column="1" x:Name ="Celda81"></TextBox>
+        <TextBox Grid.Row=" 8" Grid.Column="2" x:Name ="Celda82"></TextBox>
+        <TextBox Grid.Row=" 8" Grid.Column="3" x:Name ="Celda83"></TextBox>
+        <TextBox Grid.Row=" 8" Grid.Column="4" x:Name ="Celda84"></TextBox>
+        <TextBox Grid.Row=" 8" Grid.Column="5" x:Name ="Celda85"></TextBox>
+        <TextBox Grid.Row=" 8" Grid.Column="6" x:Name ="Celda86"></TextBox>
+        <TextBox Grid.Row=" 8" Grid.Column="7" x:Name ="Celda87"></TextBox>
+        <TextBox Grid.Row=" 8" Grid.Column="8" x:Name ="Celda88"></TextBox>
+        <!-- Row 9-->
+        <TextBox Grid.Row=" 9" Grid.Column="1" x:Name ="Celda91"></TextBox>
+        <TextBox Grid.Row=" 9" Grid.Column="2" x:Name ="Celda92"></TextBox>
+        <TextBox Grid.Row=" 9" Grid.Column="3" x:Name ="Celda93"></TextBox>
+        <TextBox Grid.Row=" 9" Grid.Column="4" x:Name ="Celda94"></TextBox>
+        <TextBox Grid.Row=" 9" Grid.Column="5" x:Name ="Celda95"></TextBox>
+        <TextBox Grid.Row=" 9" Grid.Column="6" x:Name ="Celda96"></TextBox>
+        <TextBox Grid.Row=" 9" Grid.Column="7" x:Name ="Celda97"></TextBox>
+        <TextBox Grid.Row=" 9" Grid.Column="8" x:Name ="Celda98"></TextBox>
+        <TextBox Grid.Row=" 9" Grid.Column="9" x:Name ="Celda99"></TextBox>
+
+        <Button Grid.Column="10" Grid.Row="1" x:Name="SolveButton" Content="Resolver sudoku"></Button>
+        <Button Grid.Column="10" Grid.Row="3" x:Name="ClearButton" Content="Limpiar sudoku"></Button>
+        
+    </Grid>
+</Window>
