@@ -7,7 +7,7 @@ namespace Sudoku_Solver.ViewModels
 {
     class SudokuSolver
     {
-        private Sudoku sudo;
+        public Sudoku sudo;
 
         public SudokuSolver()
         {
@@ -16,7 +16,10 @@ namespace Sudoku_Solver.ViewModels
 
         public void Solve()
         {
-
+            for (int i = 1; i < 10; i++)
+            {
+                sudo.SolveRow(i);
+            }
         }
     }
 }
