@@ -1,14 +1,10 @@
 ﻿using Sudoku_Solver.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Sudoku_Solver.ViewModels
 {
     class SudokuSolver
     {
         public Sudoku sudo;
-
         public SudokuSolver()
         {
             sudo = new Sudoku();
@@ -16,9 +12,20 @@ namespace Sudoku_Solver.ViewModels
 
         public void Solve()
         {
+            for (int j = 1; j < 10; j++)
+            { 
+                for (int i = 1; i < 10; i++)
+                {
+                    sudo.CheckInsideCol(i);
+                    sudo.SolveRow(i);
+                    sudo.SolveSuperCell(i);
+                    
+                }
+            }
             for (int i = 1; i < 10; i++)
             {
-                sudo.SolveRow(i);
+                sudo.HiddenCandidatesRow(i);
+               // sudo.HiddenCandidatesCol(i);
             }
         }
     }

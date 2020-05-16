@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace Sudoku_Solver.Models
 {
     class Fila
@@ -13,6 +10,30 @@ namespace Sudoku_Solver.Models
         public Fila()
         {
             casillas = new Casilla[9];
+        }
+
+        public Fila(Fila fil)
+        {
+            this.solucionado = fil.solucionado;
+            this.Numero = fil.Numero;
+            this.casillas = fil.casillas;
+        }
+
+        public void ChekIfSolved()
+        {
+            int cassolucionadas = 0;
+            foreach (Casilla cas in casillas)
+            {
+                if (cas.solucionado == true)
+                {
+                    cassolucionadas++;
+                }
+            }
+
+            if (cassolucionadas == 9)
+            {
+                solucionado = true;
+            }
         }
     }
 }

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace Sudoku_Solver.Models
 {
     class Supercelda
@@ -13,5 +10,29 @@ namespace Sudoku_Solver.Models
         {
             casillas = new Casilla[9];
         }
+
+        public Supercelda(Supercelda sup)
+        {
+            this.solucionado = sup.solucionado;
+            this.Numero = sup.Numero;
+            this.casillas = sup.casillas;
+        }
+        public void ChekIfSolved()
+        {
+            int cassolucionadas = 0;
+            foreach (Casilla cas in casillas)
+            {
+                if (cas.solucionado == true)
+                {
+                    cassolucionadas++;
+                }
+            }
+
+            if (cassolucionadas == 9)
+            {
+                solucionado = true;
+            }
+        }
+
     }
 }

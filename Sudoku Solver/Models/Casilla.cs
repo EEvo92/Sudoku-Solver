@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Linq;
+﻿using System.Linq;
 
 namespace Sudoku_Solver.Models
 {
@@ -40,22 +37,49 @@ namespace Sudoku_Solver.Models
             supercelda = sup;
         }
 
-        public void CheckPosiblesCasilla()
+        public Casilla( Casilla cas)
         {
-            foreach (int i in Posibles)
+            this.fila = cas.fila;
+            this.columna = cas.columna;
+            this.supercelda = cas.supercelda;
+            this.solucionado = cas.solucionado;
+            this.Numero = cas.Numero;
+            this.NumPosibles = cas.NumPosibles;
+            this.Posibles = cas.Posibles;
+        }
+
+        public void ChecIfSolved()
+        {
+            if (Numero == 0)
             {
-                if ((i == 0) && (NumPosibles > 0))
+                NumPosibles = 9;
+                foreach (int i in Posibles)
                 {
-                    NumPosibles--;
+                    if ((i == 0) && (NumPosibles > 0))
+                    {
+                        NumPosibles--;
+                    }
+                }
+                if (NumPosibles == 1)
+                {
+                    var linq = from item in this.Posibles where item != 0 select item;
+                    this.Numero = linq.ElementAt(0);
+                    this.solucionado = true;
+
+                }
+                if (solucionado)
+                {
+                    for (int i = 0; i < 9; i++)
+                    {
+                        Posibles[i] = 0;
+                    }
                 }
             }
-            if (NumPosibles == 1)
+            else
             {
-                var linq = from item in this.Posibles where item != 0 select item;
-                this.Numero = linq.ElementAt(0);
-                this.solucionado = true;
-
+                solucionado = true;
             }
+            
         }
     }
 }
