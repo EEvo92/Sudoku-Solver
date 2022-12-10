@@ -51,9 +51,9 @@ namespace Sudoku_Solver.Models
 
 
         }
-        public void SolveCol(int rownumber)
+        public void SolveCol(int colnumber)
         {
-            var linq = from item in this.casillas where item.fila == rownumber select item;
+            var linq = from item in this.casillas where item.columna == colnumber select item;
 
             foreach (Casilla cas in linq)
             {
