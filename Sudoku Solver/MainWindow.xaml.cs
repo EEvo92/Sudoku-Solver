@@ -22,82 +22,71 @@ namespace Sudoku_Solver
             sudoSolver.Solve();
             ShowData();
         }
+
+        private void SolveRowButton_Click(object sender, RoutedEventArgs e)
+        {
+            AdquireData();
+            sudoSolver.SolveRows();
+            ShowData();
+        }
         private void AdquireData()
         {
-            int rownumber = 1;
-            int colnumber = 1;
-            int supercellnumber = 1;
-            Fila row = new Fila();
+            int rownumber;
+            int colnumber;
+            int supercellnumber;
+            int[] data;
 
-            foreach (TextBox Celda in Sudoku.Children)
+            foreach (TextBox Celda in Cuadricula.Children)
             {
-                supercellnumber = DeterminateSupercell(rownumber, colnumber);
+                data = GetLocationData(Celda);
+                rownumber = data[0];
+                colnumber = data[1];
+                supercellnumber = data[2];
                 int numero = 0;
 
                 try
-                {
-                    numero = Int32.Parse(Celda.Text);
-                    if (Celda.Text.Equals(""))
+                {                
+                    if (Celda.Text.Length == 1)
                     {
-                        row.casillas[colnumber-1] = new Casilla(0, rownumber, colnumber, supercellnumber);
+                        numero = Int32.Parse(Celda.Text);
+                        sudoSolver.sudo.casillas [(rownumber-1)*9+(colnumber-1)] = new Casilla(numero, rownumber, colnumber, supercellnumber);
                     }
                     else
                     {
-                        if (Celda.Text.Length == 1)
-                        {
-                            row.casillas[colnumber - 1] = new Casilla(numero, rownumber, colnumber, supercellnumber);
-                        }
-                        else
-                        {
-                            row.casillas[colnumber - 1] = new Casilla(0, rownumber, colnumber, supercellnumber);
-                        }
-                    }
-
-                    if (colnumber == 9)
-                    {
-                        sudoSolver.sudo.AddRow(row, rownumber - 1);
-                        row = new Fila();
-                        rownumber++;
-                        colnumber = 1;
-                    }
-                    else
-                    {
-                        colnumber++;
+                        sudoSolver.sudo.casillas [(rownumber - 1) * 9 + (colnumber - 1)] = new Casilla(0, rownumber, colnumber, supercellnumber);
                     }
                 }
                 catch (FormatException exc)
                 {
-                    row.casillas[colnumber - 1] = new Casilla(0, rownumber, colnumber, supercellnumber);
-
-                    if (colnumber == 9)
-                    {
-                        sudoSolver.sudo.AddRow(row, rownumber - 1);
-                        row = new Fila();
-                        rownumber++;
-                        colnumber = 1;
-                    }
-                    else
-                    {
-                        colnumber++;
-                    }
+                    sudoSolver.sudo.casillas[(rownumber - 1) * 9 + (colnumber - 1)] = new Casilla(0, rownumber, colnumber, supercellnumber);
                 }
             }            
         }
+
+        private int[]  GetLocationData(TextBox textBox)
+        {
+            int[] data = new int[3];
+            data[0] = Convert.ToInt16(textBox.Name[5].ToString());
+            data[1] = Convert.ToInt16(textBox.Name[6].ToString());
+            data[2] = Convert.ToInt16(textBox.Name[7].ToString());
+            return data;
+        }
+
         private void ShowData()
         {
             int rownumber = 1;
             int colnumber = 1;
 
-            foreach (TextBox Celda in Sudoku.Children)
+            foreach (TextBox Celda in Cuadricula.Children)
             {
-                if (sudoSolver.sudo.filas[rownumber-1].casillas[colnumber-1].Numero != 0)
+                if (sudoSolver.sudo.casillas[(rownumber - 1) * 9 + (colnumber - 1)].Numero != 0)
                 {
-                    Celda.Text = sudoSolver.sudo.filas[rownumber-1].casillas[colnumber - 1].Numero.ToString();
+                    Celda.Text = sudoSolver.sudo.casillas[(rownumber - 1) * 9 + (colnumber - 1)].Numero.ToString();
                 }
                 else
                 {
                     string posibles = "";
-                    foreach (int posible in sudoSolver.sudo.filas[rownumber-1].casillas[colnumber - 1].Posibles)
+                    foreach (int posible in sudoSolver.sudo.casillas[(rownumber - 1) * 9 + (colnumber - 1)].Posibles)
                     {
                         if (posible != 0)
                         {
@@ -117,48 +106,10 @@ namespace Sudoku_Solver
                 }
             }           
         }
-        private int DeterminateSupercell (int row, int col)
-        {
-            if ((row < 4) && (col < 4))
-            {
-               return 1;
-            }
-            else if ((row < 4) && (col > 3) && (col < 7))
-            {
-                return 2;
-            }
-            else if ((row < 4) && (col > 6))
-            {
-                return 3;
-            }
-            else if ((row > 3) && (row < 7) && (col < 4))
-            {
-                return 4;
-            }
-            else if ((row > 3) && (row < 7) && (col > 3) && (col < 7))
-            {
-                return 5;
-            }
-            else if ((row > 3) && (row < 7) && (col > 6))
-            {
-                return 6;
-            }
-            else if ((row > 6) && (col < 4))
-            {
-                return 7;
-            }
-            else if ((row > 6) && (col > 3) && (col < 7))
-            {
-                return 8;
-            }
-            else if ((row > 6) && (col > 6))
-            {
-                return 9;
-            }else { return 0; }
-        }
+
         private void ClearButton_Click(object sender, RoutedEventArgs e)
         {
-            foreach (TextBox Celda in Sudoku.Children)
+            foreach (TextBox Celda in Cuadricula.Children)
             {
                 Celda.Text = "";
             }
