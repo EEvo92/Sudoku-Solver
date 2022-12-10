@@ -1,0 +1,17 @@
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\obj\Debug\net48\Sudoku Solver.csproj.AssemblyReference.cache
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\obj\Debug\net48\Sudoku Solver.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\obj\Debug\net48\MainWindow.g.cs
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\obj\Debug\net48\App.g.cs
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\obj\Debug\net48\Sudoku Solver_MarkupCompile.cache
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\obj\Debug\net48\Sudoku Solver_MarkupCompile.lref
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\bin\Debug\net48\Sudoku Solver.exe.config
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\bin\Debug\net48\Sudoku Solver.exe
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\bin\Debug\net48\Sudoku Solver.pdb
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\obj\Debug\net48\MainWindow.baml
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\obj\Debug\net48\Sudoku Solver.g.resources
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\obj\Debug\net48\Sudoku Solver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\obj\Debug\net48\Sudoku Solver.AssemblyInfoInputs.cache
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\obj\Debug\net48\Sudoku Solver.AssemblyInfo.cs
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\obj\Debug\net48\Sudoku Solver.csproj.CoreCompileInputs.cache
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\obj\Debug\net48\Sudoku Solver.exe
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\obj\Debug\net48\Sudoku Solver.pdb

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>net48</TargetFramework>
     <RootNamespace>Sudoku_Solver</RootNamespace>
     <UseWPF>true</UseWPF>
     <NoWin32Manifest>true</NoWin32Manifest>
