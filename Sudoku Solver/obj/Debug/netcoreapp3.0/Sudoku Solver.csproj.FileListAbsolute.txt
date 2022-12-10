@@ -16,3 +16,23 @@ C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\
 C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\Sudoku Solver.dll
 C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\Sudoku Solver.pdb
 C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\Sudoku Solver.genruntimeconfig.cache
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\bin\Debug\netcoreapp3.0\Sudoku Solver.exe
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\bin\Debug\netcoreapp3.0\Sudoku Solver.deps.json
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\bin\Debug\netcoreapp3.0\Sudoku Solver.runtimeconfig.json
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\bin\Debug\netcoreapp3.0\Sudoku Solver.runtimeconfig.dev.json
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\bin\Debug\netcoreapp3.0\Sudoku Solver.dll
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\bin\Debug\netcoreapp3.0\Sudoku Solver.pdb
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\Sudoku Solver.csproj.AssemblyReference.cache
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\MainWindow.g.cs
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\App.g.cs
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\Sudoku Solver_MarkupCompile.cache
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\Sudoku Solver_MarkupCompile.lref
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\MainWindow.baml
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\Sudoku Solver.g.resources
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\Sudoku Solver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\Sudoku Solver.AssemblyInfoInputs.cache
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\Sudoku Solver.AssemblyInfo.cs
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\Sudoku Solver.csproj.CoreCompileInputs.cache
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\Sudoku Solver.dll
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\Sudoku Solver.pdb
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\Sudoku Solver.genruntimeconfig.cache

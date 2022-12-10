@@ -16,16 +16,18 @@ namespace Sudoku_Solver.ViewModels
             { 
                 for (int i = 1; i < 10; i++)
                 {
-                    sudo.CheckInsideCol(i);
+                    sudo.SolveCol(i);
                     sudo.SolveRow(i);
-                    sudo.SolveSuperCell(i);
-                    
+                    sudo.SolveSuperCell(i);                    
                 }
             }
+        }
+
+        public void SolveRows()
+        {
             for (int i = 1; i < 10; i++)
             {
-                sudo.HiddenCandidatesRow(i);
-               // sudo.HiddenCandidatesCol(i);
+                sudo.SolveRow(i);
             }
         }
     }

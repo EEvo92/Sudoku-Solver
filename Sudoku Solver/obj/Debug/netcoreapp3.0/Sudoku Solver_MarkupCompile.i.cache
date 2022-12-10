@@ -1,19 +1,19 @@
 ﻿Sudoku Solver
-
+1.0.0.0
 
 winexe
 C#
 .cs
-C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\
 Sudoku_Solver
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_0
-C:\Users\fonse\source\repos\Sudoku Solver\Sudoku Solver\App.xaml
-11151548125
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_0;
+C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\App.xaml
+11407045341
 
-91456246732
-192-1037106189
+8-601164829
+192634559385
 MainWindow.xaml;
 
 False
