@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jose\\Source\\Repos\\Sudoku-Solver\\Sudoku Solver\\Sudoku Solver.csproj": {}
+    "C:\\Users\\Jose\\source\\repos\\Sudoku-Solver\\Sudoku Solver\\Sudoku Solver.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jose\\Source\\Repos\\Sudoku-Solver\\Sudoku Solver\\Sudoku Solver.csproj": {
+    "C:\\Users\\Jose\\source\\repos\\Sudoku-Solver\\Sudoku Solver\\Sudoku Solver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jose\\Source\\Repos\\Sudoku-Solver\\Sudoku Solver\\Sudoku Solver.csproj",
+        "projectUniqueName": "C:\\Users\\Jose\\source\\repos\\Sudoku-Solver\\Sudoku Solver\\Sudoku Solver.csproj",
         "projectName": "Sudoku Solver",
-        "projectPath": "C:\\Users\\Jose\\Source\\Repos\\Sudoku-Solver\\Sudoku Solver\\Sudoku Solver.csproj",
+        "projectPath": "C:\\Users\\Jose\\source\\repos\\Sudoku-Solver\\Sudoku Solver\\Sudoku Solver.csproj",
         "packagesPath": "C:\\Users\\Jose\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jose\\Source\\Repos\\Sudoku-Solver\\Sudoku Solver\\obj\\",
+        "outputPath": "C:\\Users\\Jose\\source\\repos\\Sudoku-Solver\\Sudoku Solver\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jose\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dLFKNh7i+fP7r+W1BV05SbZeSkKrkM6PRKJCbgHYFGgfPtoyjB/tyq3QWQZgzsqeiarZLM7k7BVQYPqzuQF3FQ==",
+  "dgSpecHash": "oeZDEi78zBSju9f8yvAcqZIy0UwbNvUW3/jtjbTJgw8zTJ4rvuCm+u/Fz53SPkVvYvCj7jf1bHhS2UqE1FDwAg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jose\\Source\\Repos\\Sudoku-Solver\\Sudoku Solver\\Sudoku Solver.csproj",
+  "projectFilePath": "C:\\Users\\Jose\\source\\repos\\Sudoku-Solver\\Sudoku Solver\\Sudoku Solver.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jose\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
     "C:\\Users\\Jose\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",

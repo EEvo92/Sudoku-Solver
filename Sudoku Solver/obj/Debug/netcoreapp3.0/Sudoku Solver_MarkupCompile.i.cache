@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\obj\Debug\netcoreapp3.0\
 Sudoku_Solver
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_0;
-C:\Users\Jose\Source\Repos\Sudoku-Solver\Sudoku Solver\App.xaml
+C:\Users\Jose\source\repos\Sudoku-Solver\Sudoku Solver\App.xaml
 11407045341
 
 8-601164829
 192634559385
 MainWindow.xaml;
 
-False
+True
 
