@@ -3,6 +3,7 @@ using Sudoku_Solver.ViewModels;
 using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Collections.Generic;
 
 namespace Sudoku_Solver
 {
@@ -14,6 +15,8 @@ namespace Sudoku_Solver
             InitializeComponent();
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             DataContext = sudoSolver;
+            InitializeData();
+            
 
         }
         private void SolveButton_Click(object sender, RoutedEventArgs e)
@@ -26,7 +29,8 @@ namespace Sudoku_Solver
         private void SolveRowButton_Click(object sender, RoutedEventArgs e)
         {
             AdquireData();
-            sudoSolver.SolveRows();
+            sudoSolver.Solve();
+            sudoSolver.DeleteIndividualCandidates();
             ShowData();
         }
         private void AdquireData()
@@ -49,19 +53,44 @@ namespace Sudoku_Solver
                     if (Celda.Text.Length == 1)
                     {
                         numero = Int32.Parse(Celda.Text);
-                        sudoSolver.sudo.casillas [(rownumber-1)*9+(colnumber-1)] = new Casilla(numero, rownumber, colnumber, supercellnumber);
+                        sudoSolver.sudo.Casillas [(rownumber-1)*9+(colnumber-1)] = new Casilla(numero, rownumber, colnumber, supercellnumber);
                     }
                     else
                     {
-                        sudoSolver.sudo.casillas [(rownumber - 1) * 9 + (colnumber - 1)] = new Casilla(0, rownumber, colnumber, supercellnumber);
+                        List<int> Posibles = new List<int>();
+                        string texto = Celda.Text;
+                        
+                        for (int i = 0; i < texto.Length; i++)
+                        {
+                            Posibles.Add(Int32.Parse(texto.Substring(i,1)));
+                        }
+                        sudoSolver.sudo.Casillas [(rownumber - 1) * 9 + (colnumber - 1)] = new Casilla(0, rownumber, colnumber, supercellnumber);
                     }
                 }
                 catch (FormatException exc)
                 {
-                    sudoSolver.sudo.casillas[(rownumber - 1) * 9 + (colnumber - 1)] = new Casilla(0, rownumber, colnumber, supercellnumber);
+                    sudoSolver.sudo.Casillas[(rownumber - 1) * 9 + (colnumber - 1)] = new Casilla(0, rownumber, colnumber, supercellnumber);
                 }
             }            
         }
+        private void InitializeData()
+        {
+            int rownumber;
+            int colnumber;
+            int supercellnumber;
+            int[] data;
+
+            foreach (TextBox Celda in Cuadricula.Children)
+            {
+                data = GetLocationData(Celda);
+                rownumber = data[0];
+                colnumber = data[1];
+                supercellnumber = data[2];
+                int numero = 0;
+                sudoSolver.sudo.Casillas[(rownumber - 1) * 9 + (colnumber - 1)] = new Casilla(numero, rownumber, colnumber, supercellnumber);
+            }
+        }
+
 
         private int[]  GetLocationData(TextBox textBox)
         {
@@ -74,19 +103,27 @@ namespace Sudoku_Solver
 
         private void ShowData()
         {
-            int rownumber = 1;
-            int colnumber = 1;
-
             foreach (TextBox Celda in Cuadricula.Children)
             {
-                if (sudoSolver.sudo.casillas[(rownumber - 1) * 9 + (colnumber - 1)].Numero != 0)
+                int[] data; data = GetLocationData(Celda);
+                int rownumber = data[0];
+                int colnumber = data[1];
+                int supercellnumber = data[2];
+
+                if (sudoSolver.sudo.Casillas[(rownumber - 1) * 9 + (colnumber - 1)].Numero != 0)
                 {
-                    Celda.Text = sudoSolver.sudo.casillas[(rownumber - 1) * 9 + (colnumber - 1)].Numero.ToString();
+                    Celda.FontSize = 36;
+                    Celda.TextAlignment = TextAlignment.Center;
+                    //Celda.VerticalAlignment = VerticalAlignment.Center;
+                    Celda.Text = sudoSolver.sudo.Casillas[(rownumber - 1) * 9 + (colnumber - 1)].Numero.ToString();
+                    
                 }
                 else
                 {
+                    Celda.FontSize = 15;
+                    Celda.TextAlignment = TextAlignment.Left;
                     string posibles = "";
-                    foreach (int posible in sudoSolver.sudo.casillas[(rownumber - 1) * 9 + (colnumber - 1)].Posibles)
+                    foreach (int posible in sudoSolver.sudo.Casillas[(rownumber - 1) * 9 + (colnumber - 1)].Posibles)
                     {
                         if (posible != 0)
                         {
@@ -94,15 +131,6 @@ namespace Sudoku_Solver
                         }
                     }
                     Celda.Text = posibles;
-                }
-                if (colnumber == 9)
-                {
-                    rownumber++;
-                    colnumber = 1;
-                }
-                else
-                {
-                    colnumber++;
                 }
             }           
         }

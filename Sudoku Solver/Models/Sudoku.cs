@@ -1,20 +1,19 @@
-﻿
-using System.Linq;
+﻿using System.Linq;
 
 namespace Sudoku_Solver.Models
 {
-    class Sudoku
+    public class Sudoku
     {
-        public bool solucionado = false;
-        public Casilla[] casillas { get; set; }
+        public Casilla[] Casillas { get; set; }
         
         public Sudoku()
         {
-            casillas = new Casilla[81];
+            Casillas = new Casilla[81];
         }
+        /*
         public void SolveRow(int rownumber)
         {
-            var linq = from item in this.casillas where item.fila == rownumber select item;
+            var linq = from item in this.Casillas where item.fila == rownumber select item;
 
 
             foreach (Casilla cas in linq)
@@ -25,7 +24,7 @@ namespace Sudoku_Solver.Models
                     {
                         if (cas2.Numero == 0)
                         {
-                            casillas[(cas2.fila - 1) * 9 + (cas2.columna - 1)].Posibles.Remove(cas.Numero);
+                            Casillas[(cas2.fila - 1) * 9 + (cas2.columna - 1)].Posibles.Remove(cas.Numero);
                         }
                     }
                 }
@@ -33,7 +32,7 @@ namespace Sudoku_Solver.Models
         }       
         public void SolveSuperCell(int supercellnumber)
         {
-            var linq = from item in this.casillas where item.supercelda == supercellnumber select item;
+            var linq = from item in this.Casillas where item.supercelda == supercellnumber select item;
 
             foreach (Casilla cas in linq)
             {
@@ -43,7 +42,7 @@ namespace Sudoku_Solver.Models
                     {
                         if (cas2.Numero == 0)
                         {
-                            casillas[(cas2.fila - 1) * 9 + (cas2.columna - 1)].Posibles.Remove(cas.Numero);
+                            Casillas[(cas2.fila - 1) * 9 + (cas2.columna - 1)].Posibles.Remove(cas.Numero);
                         }
                     }
                 }
@@ -53,7 +52,7 @@ namespace Sudoku_Solver.Models
         }
         public void SolveCol(int colnumber)
         {
-            var linq = from item in this.casillas where item.columna == colnumber select item;
+            var linq = from item in this.Casillas where item.columna == colnumber select item;
 
             foreach (Casilla cas in linq)
             {
@@ -63,7 +62,7 @@ namespace Sudoku_Solver.Models
                     {
                         if (cas2.Numero == 0)
                         {
-                            casillas[(cas2.fila - 1) * 9 + (cas2.columna - 1)].Posibles.Remove(cas.Numero);
+                            Casillas[(cas2.fila - 1) * 9 + (cas2.columna - 1)].Posibles.Remove(cas.Numero);
                         }
                     }
                 }
@@ -72,11 +71,31 @@ namespace Sudoku_Solver.Models
 
         public void CheckIfCasSolved(Casilla cas)
         {
-            if (cas.Posibles.Count == 1)
+            if (cas.Numero == 0)
             {
-                cas.Numero = cas.Posibles.ElementAt(1);
-                solucionado = true;
+                if (cas.Posibles.Count == 1)
+                {
+                    cas.Numero = cas.Posibles.ElementAt(1);
+                }
             }
         }
+
+        public void DeleteIndividualCandidates()
+        {
+            for (int i = 1; i < 10; i++)
+            {
+                var linq = from item in this.Casillas where item.fila == i select item;
+                for (int j = 1; j < 10; j++)
+                {
+                    var linq2 = from item in linq where item.Posibles.Contains(j) select item;
+                    if (linq2.Count() == 1)
+                    {
+                        Casillas[(linq2.First().fila - 1) * 9 + (linq2.First().columna - 1)].Numero = linq2.First().Numero;
+                    }
+                }
+
+            }
+
+        }*/
     }
 }

@@ -6,23 +6,25 @@
         DataContext="SudokuSolver"
         xmlns:local="clr-namespace:Sudoku_Solver"
         mc:Ignorable="d"
-        Title="Sudoku Solver 2.0" Height="720" Width="1280">
+        Title="Sudoku Solver 2.0" Height="720" Width="1280"
+        Background="LightGray">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>           
+            <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="10*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="10*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="5*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="71*"></ColumnDefinition>
+            <ColumnDefinition Width="647*"></ColumnDefinition>
+            <ColumnDefinition Width="64*"/>
+            <ColumnDefinition Width="71*"></ColumnDefinition>
+            <ColumnDefinition Width="356*"></ColumnDefinition>
+            <ColumnDefinition Width="71*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Grid Grid.Row="1"  Grid.Column="1" x:Name="Cuadricula">
+        <Grid Grid.Row="1" x:Name="Cuadricula" Grid.ColumnSpan="3" Margin="71,0,0,0">
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"></RowDefinition>
@@ -48,98 +50,98 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <!-- Row 1-->
-            <TextBox Grid.Row=" 0" Grid.Column="0" x:Name ="Celda111" MaxLength="1" BorderBrush="Red"/>
-            <TextBox Grid.Row=" 0" Grid.Column="1" x:Name ="Celda121" MaxLength="1" BorderBrush="Red"></TextBox>
-            <TextBox Grid.Row=" 0" Grid.Column="2" x:Name ="Celda131" MaxLength="1" BorderBrush="Red"></TextBox>
-            <TextBox Grid.Row=" 0" Grid.Column="3" x:Name ="Celda142" MaxLength="1" BorderBrush="Blue"></TextBox>
-            <TextBox Grid.Row=" 0" Grid.Column="4" x:Name ="Celda152" MaxLength="1" BorderBrush="Blue"></TextBox>
-            <TextBox Grid.Row=" 0" Grid.Column="5" x:Name ="Celda162" MaxLength="1" BorderBrush="Blue"></TextBox>
-            <TextBox Grid.Row=" 0" Grid.Column="6" x:Name ="Celda173" MaxLength="1" BorderBrush="Green"></TextBox>
-            <TextBox Grid.Row=" 0" Grid.Column="7" x:Name ="Celda183" MaxLength="1" BorderBrush="Green"></TextBox>
-            <TextBox Grid.Row=" 0" Grid.Column="8" x:Name ="Celda193" MaxLength="1" BorderBrush="Green"></TextBox>
+            <TextBox Grid.Row=" 0" Grid.Column="0" x:Name ="Celda111" MaxLength="1" BorderBrush="Red" Background="LightGray"/>
+            <TextBox Grid.Row=" 0" Grid.Column="1" x:Name ="Celda121" MaxLength="1" BorderBrush="Red" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 0" Grid.Column="2" x:Name ="Celda131" MaxLength="1" BorderBrush="Red" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 0" Grid.Column="3" x:Name ="Celda142" MaxLength="1" BorderBrush="Blue" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 0" Grid.Column="4" x:Name ="Celda152" MaxLength="1" BorderBrush="Blue" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 0" Grid.Column="5" x:Name ="Celda162" MaxLength="1" BorderBrush="Blue" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 0" Grid.Column="6" x:Name ="Celda173" MaxLength="1" BorderBrush="Green" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 0" Grid.Column="7" x:Name ="Celda183" MaxLength="1" BorderBrush="Green" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 0" Grid.Column="8" x:Name ="Celda193" MaxLength="1" BorderBrush="Green" Background="LightGray"></TextBox>
             <!-- Row 2-->
-            <TextBox Grid.Row=" 1" Grid.Column="0" x:Name ="Celda211" MaxLength="1" BorderBrush="Red"></TextBox>
-            <TextBox Grid.Row=" 1" Grid.Column="1" x:Name ="Celda221" MaxLength="1" BorderBrush="Red"></TextBox>
-            <TextBox Grid.Row=" 1" Grid.Column="2" x:Name ="Celda231" MaxLength="1" BorderBrush="Red"></TextBox>
-            <TextBox Grid.Row=" 1" Grid.Column="3" x:Name ="Celda242" MaxLength="1" BorderBrush="Blue"></TextBox>
-            <TextBox Grid.Row=" 1" Grid.Column="4" x:Name ="Celda252" MaxLength="1" BorderBrush="Blue"></TextBox>
-            <TextBox Grid.Row=" 1" Grid.Column="5" x:Name ="Celda262" MaxLength="1" BorderBrush="Blue"></TextBox>
-            <TextBox Grid.Row=" 1" Grid.Column="6" x:Name ="Celda273" MaxLength="1" BorderBrush="Green"></TextBox>
-            <TextBox Grid.Row=" 1" Grid.Column="7" x:Name ="Celda283" MaxLength="1" BorderBrush="Green"></TextBox>
-            <TextBox Grid.Row=" 1" Grid.Column="8" x:Name ="Celda293" MaxLength="1" BorderBrush="Green"></TextBox>
+            <TextBox Grid.Row=" 1" Grid.Column="0" x:Name ="Celda211" MaxLength="1" BorderBrush="Red" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 1" Grid.Column="1" x:Name ="Celda221" MaxLength="1" BorderBrush="Red" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 1" Grid.Column="2" x:Name ="Celda231" MaxLength="1" BorderBrush="Red" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 1" Grid.Column="3" x:Name ="Celda242" MaxLength="1" BorderBrush="Blue" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 1" Grid.Column="4" x:Name ="Celda252" MaxLength="1" BorderBrush="Blue" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 1" Grid.Column="5" x:Name ="Celda262" MaxLength="1" BorderBrush="Blue" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 1" Grid.Column="6" x:Name ="Celda273" MaxLength="1" BorderBrush="Green" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 1" Grid.Column="7" x:Name ="Celda283" MaxLength="1" BorderBrush="Green" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 1" Grid.Column="8" x:Name ="Celda293" MaxLength="1" BorderBrush="Green" Background="LightGray"></TextBox>
             <!-- Row 3-->
-            <TextBox Grid.Row=" 2" Grid.Column="0" x:Name ="Celda311" MaxLength="1" BorderBrush="Red"></TextBox>
-            <TextBox Grid.Row=" 2" Grid.Column="1" x:Name ="Celda321" MaxLength="1" BorderBrush="Red"></TextBox>
-            <TextBox Grid.Row=" 2" Grid.Column="2" x:Name ="Celda331" MaxLength="1" BorderBrush="Red"></TextBox>
-            <TextBox Grid.Row=" 2" Grid.Column="3" x:Name ="Celda342" MaxLength="1" BorderBrush="Blue"></TextBox>
-            <TextBox Grid.Row=" 2" Grid.Column="4" x:Name ="Celda352" MaxLength="1" BorderBrush="Blue"></TextBox>
-            <TextBox Grid.Row=" 2" Grid.Column="5" x:Name ="Celda362" MaxLength="1" BorderBrush="Blue"></TextBox>
-            <TextBox Grid.Row=" 2" Grid.Column="6" x:Name ="Celda373" MaxLength="1" BorderBrush="Green"></TextBox>
-            <TextBox Grid.Row=" 2" Grid.Column="7" x:Name ="Celda383" MaxLength="1" BorderBrush="Green"></TextBox>
-            <TextBox Grid.Row=" 2" Grid.Column="8" x:Name ="Celda393" MaxLength="1" BorderBrush="Green"></TextBox>
+            <TextBox Grid.Row=" 2" Grid.Column="0" x:Name ="Celda311" MaxLength="1" BorderBrush="Red" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 2" Grid.Column="1" x:Name ="Celda321" MaxLength="1" BorderBrush="Red" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 2" Grid.Column="2" x:Name ="Celda331" MaxLength="1" BorderBrush="Red" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 2" Grid.Column="3" x:Name ="Celda342" MaxLength="1" BorderBrush="Blue" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 2" Grid.Column="4" x:Name ="Celda352" MaxLength="1" BorderBrush="Blue" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 2" Grid.Column="5" x:Name ="Celda362" MaxLength="1" BorderBrush="Blue" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 2" Grid.Column="6" x:Name ="Celda373" MaxLength="1" BorderBrush="Green" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 2" Grid.Column="7" x:Name ="Celda383" MaxLength="1" BorderBrush="Green" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 2" Grid.Column="8" x:Name ="Celda393" MaxLength="1" BorderBrush="Green" Background="LightGray"></TextBox>
             <!-- Row 4-->
-            <TextBox Grid.Row=" 3" Grid.Column="0" x:Name ="Celda414" MaxLength="1" BorderBrush="Yellow"></TextBox>
-            <TextBox Grid.Row=" 3" Grid.Column="1" x:Name ="Celda424" MaxLength="1" BorderBrush="Yellow"></TextBox>
-            <TextBox Grid.Row=" 3" Grid.Column="2" x:Name ="Celda434" MaxLength="1" BorderBrush="Yellow"></TextBox>
-            <TextBox Grid.Row=" 3" Grid.Column="3" x:Name ="Celda445" MaxLength="1" BorderBrush="Pink"></TextBox>
-            <TextBox Grid.Row=" 3" Grid.Column="4" x:Name ="Celda455" MaxLength="1" BorderBrush="Pink"></TextBox>
-            <TextBox Grid.Row=" 3" Grid.Column="5" x:Name ="Celda465" MaxLength="1" BorderBrush="Pink"></TextBox>
-            <TextBox Grid.Row=" 3" Grid.Column="6" x:Name ="Celda476" MaxLength="1" BorderBrush="Purple"></TextBox>
-            <TextBox Grid.Row=" 3" Grid.Column="7" x:Name ="Celda486" MaxLength="1" BorderBrush="Purple"></TextBox>
-            <TextBox Grid.Row=" 3" Grid.Column="8" x:Name ="Celda496" MaxLength="1" BorderBrush="Purple"></TextBox>
+            <TextBox Grid.Row=" 3" Grid.Column="0" x:Name ="Celda414" MaxLength="1" BorderBrush="Yellow" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 3" Grid.Column="1" x:Name ="Celda424" MaxLength="1" BorderBrush="Yellow" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 3" Grid.Column="2" x:Name ="Celda434" MaxLength="1" BorderBrush="Yellow" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 3" Grid.Column="3" x:Name ="Celda445" MaxLength="1" BorderBrush="HotPink" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 3" Grid.Column="4" x:Name ="Celda455" MaxLength="1" BorderBrush="HotPink" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 3" Grid.Column="5" x:Name ="Celda465" MaxLength="1" BorderBrush="HotPink" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 3" Grid.Column="6" x:Name ="Celda476" MaxLength="1" BorderBrush="Purple" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 3" Grid.Column="7" x:Name ="Celda486" MaxLength="1" BorderBrush="Purple" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 3" Grid.Column="8" x:Name ="Celda496" MaxLength="1" BorderBrush="Purple" Background="LightGray"></TextBox>
             <!-- Row 5-->
-            <TextBox Grid.Row=" 4" Grid.Column="0" x:Name ="Celda514" MaxLength="1" BorderBrush="Yellow"></TextBox>
-            <TextBox Grid.Row=" 4" Grid.Column="1" x:Name ="Celda524" MaxLength="1" BorderBrush="Yellow"></TextBox>
-            <TextBox Grid.Row=" 4" Grid.Column="2" x:Name ="Celda534" MaxLength="1" BorderBrush="Yellow"></TextBox>
-            <TextBox Grid.Row=" 4" Grid.Column="3" x:Name ="Celda545" MaxLength="1" BorderBrush="Pink"></TextBox>
-            <TextBox Grid.Row=" 4" Grid.Column="4" x:Name ="Celda555" MaxLength="1" BorderBrush="Pink"></TextBox>
-            <TextBox Grid.Row=" 4" Grid.Column="5" x:Name ="Celda565" MaxLength="1" BorderBrush="Pink"></TextBox>
-            <TextBox Grid.Row=" 4" Grid.Column="6" x:Name ="Celda576" MaxLength="1" BorderBrush="Purple"></TextBox>
-            <TextBox Grid.Row=" 4" Grid.Column="7" x:Name ="Celda586" MaxLength="1" BorderBrush="Purple"></TextBox>
-            <TextBox Grid.Row=" 4" Grid.Column="8" x:Name ="Celda596" MaxLength="1" BorderBrush="Purple"></TextBox>
+            <TextBox Grid.Row=" 4" Grid.Column="0" x:Name ="Celda514" MaxLength="1" BorderBrush="Yellow" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 4" Grid.Column="1" x:Name ="Celda524" MaxLength="1" BorderBrush="Yellow" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 4" Grid.Column="2" x:Name ="Celda534" MaxLength="1" BorderBrush="Yellow" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 4" Grid.Column="3" x:Name ="Celda545" MaxLength="1" BorderBrush="HotPink"  Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 4" Grid.Column="4" x:Name ="Celda555" MaxLength="1" BorderBrush="HotPink" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 4" Grid.Column="5" x:Name ="Celda565" MaxLength="1" BorderBrush="HotPink" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 4" Grid.Column="6" x:Name ="Celda576" MaxLength="1" BorderBrush="Purple" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 4" Grid.Column="7" x:Name ="Celda586" MaxLength="1" BorderBrush="Purple" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 4" Grid.Column="8" x:Name ="Celda596" MaxLength="1" BorderBrush="Purple" Background="LightGray"></TextBox>
             <!-- Row 6-->
-            <TextBox Grid.Row=" 5" Grid.Column="0" x:Name ="Celda614" MaxLength="1" BorderBrush="Yellow"></TextBox>
-            <TextBox Grid.Row=" 5" Grid.Column="1" x:Name ="Celda624" MaxLength="1" BorderBrush="Yellow"></TextBox>
-            <TextBox Grid.Row=" 5" Grid.Column="2" x:Name ="Celda634" MaxLength="1" BorderBrush="Yellow"></TextBox>
-            <TextBox Grid.Row=" 5" Grid.Column="3" x:Name ="Celda645" MaxLength="1" BorderBrush="Pink"></TextBox>
-            <TextBox Grid.Row=" 5" Grid.Column="4" x:Name ="Celda655" MaxLength="1" BorderBrush="Pink"></TextBox>
-            <TextBox Grid.Row=" 5" Grid.Column="5" x:Name ="Celda665" MaxLength="1" BorderBrush="Pink"></TextBox>
-            <TextBox Grid.Row=" 5" Grid.Column="6" x:Name ="Celda676" MaxLength="1" BorderBrush="Purple"></TextBox>
-            <TextBox Grid.Row=" 5" Grid.Column="7" x:Name ="Celda686" MaxLength="1" BorderBrush="Purple"></TextBox>
-            <TextBox Grid.Row=" 5" Grid.Column="8" x:Name ="Celda696" MaxLength="1" BorderBrush="Purple"></TextBox>
+            <TextBox Grid.Row=" 5" Grid.Column="0" x:Name ="Celda614" MaxLength="1" BorderBrush="Yellow" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 5" Grid.Column="1" x:Name ="Celda624" MaxLength="1" BorderBrush="Yellow" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 5" Grid.Column="2" x:Name ="Celda634" MaxLength="1" BorderBrush="Yellow" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 5" Grid.Column="3" x:Name ="Celda645" MaxLength="1" BorderBrush="HotPink" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 5" Grid.Column="4" x:Name ="Celda655" MaxLength="1" BorderBrush="HotPink" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 5" Grid.Column="5" x:Name ="Celda665" MaxLength="1" BorderBrush="HotPink" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 5" Grid.Column="6" x:Name ="Celda676" MaxLength="1" BorderBrush="Purple" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 5" Grid.Column="7" x:Name ="Celda686" MaxLength="1" BorderBrush="Purple" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 5" Grid.Column="8" x:Name ="Celda696" MaxLength="1" BorderBrush="Purple" Background="LightGray"></TextBox>
             <!-- Row 7-->
-            <TextBox Grid.Row=" 6" Grid.Column="0" x:Name ="Celda717" MaxLength="1" BorderBrush="Aquamarine"></TextBox>
-            <TextBox Grid.Row=" 6" Grid.Column="1" x:Name ="Celda727" MaxLength="1" BorderBrush="Aquamarine"></TextBox>
-            <TextBox Grid.Row=" 6" Grid.Column="2" x:Name ="Celda737" MaxLength="1" BorderBrush="Aquamarine"></TextBox>
-            <TextBox Grid.Row=" 6" Grid.Column="3" x:Name ="Celda748" MaxLength="1" BorderBrush="BlueViolet"></TextBox>
-            <TextBox Grid.Row=" 6" Grid.Column="4" x:Name ="Celda758" MaxLength="1" BorderBrush="BlueViolet"></TextBox>
-            <TextBox Grid.Row=" 6" Grid.Column="5" x:Name ="Celda768" MaxLength="1" BorderBrush="BlueViolet"></TextBox>
-            <TextBox Grid.Row=" 6" Grid.Column="6" x:Name ="Celda779" MaxLength="1" BorderBrush="Orange"></TextBox>
-            <TextBox Grid.Row=" 6" Grid.Column="7" x:Name ="Celda789" MaxLength="1" BorderBrush="Orange"></TextBox>
-            <TextBox Grid.Row=" 6" Grid.Column="8" x:Name ="Celda799" MaxLength="1" BorderBrush="Orange"></TextBox>
+            <TextBox Grid.Row=" 6" Grid.Column="0" x:Name ="Celda717" MaxLength="1" BorderBrush="Aquamarine" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 6" Grid.Column="1" x:Name ="Celda727" MaxLength="1" BorderBrush="Aquamarine" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 6" Grid.Column="2" x:Name ="Celda737" MaxLength="1" BorderBrush="Aquamarine" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 6" Grid.Column="3" x:Name ="Celda748" MaxLength="1" BorderBrush="BlueViolet" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 6" Grid.Column="4" x:Name ="Celda758" MaxLength="1" BorderBrush="BlueViolet" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 6" Grid.Column="5" x:Name ="Celda768" MaxLength="1" BorderBrush="BlueViolet" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 6" Grid.Column="6" x:Name ="Celda779" MaxLength="1" BorderBrush="Orange" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 6" Grid.Column="7" x:Name ="Celda789" MaxLength="1" BorderBrush="Orange" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 6" Grid.Column="8" x:Name ="Celda799" MaxLength="1" BorderBrush="Orange" Background="LightGray"></TextBox>
             <!-- Row 8-->
-            <TextBox Grid.Row=" 7" Grid.Column="0" x:Name ="Celda817" MaxLength="1" BorderBrush="Aquamarine"></TextBox>
-            <TextBox Grid.Row=" 7" Grid.Column="1" x:Name ="Celda827" MaxLength="1" BorderBrush="Aquamarine"></TextBox>
-            <TextBox Grid.Row=" 7" Grid.Column="2" x:Name ="Celda837" MaxLength="1" BorderBrush="Aquamarine"></TextBox>
-            <TextBox Grid.Row=" 7" Grid.Column="3" x:Name ="Celda848" MaxLength="1" BorderBrush="BlueViolet"></TextBox>
-            <TextBox Grid.Row=" 7" Grid.Column="4" x:Name ="Celda858" MaxLength="1" BorderBrush="BlueViolet"></TextBox>
-            <TextBox Grid.Row=" 7" Grid.Column="5" x:Name ="Celda868" MaxLength="1" BorderBrush="BlueViolet"></TextBox>
-            <TextBox Grid.Row=" 7" Grid.Column="6" x:Name ="Celda879" MaxLength="1" BorderBrush="Orange"></TextBox>
-            <TextBox Grid.Row=" 7" Grid.Column="7" x:Name ="Celda889" MaxLength="1" BorderBrush="Orange"></TextBox>
-            <TextBox Grid.Row=" 7" Grid.Column="8" x:Name ="Celda899" MaxLength="1" BorderBrush="Orange"></TextBox>
+            <TextBox Grid.Row=" 7" Grid.Column="0" x:Name ="Celda817" MaxLength="1" BorderBrush="Aquamarine" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 7" Grid.Column="1" x:Name ="Celda827" MaxLength="1" BorderBrush="Aquamarine" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 7" Grid.Column="2" x:Name ="Celda837" MaxLength="1" BorderBrush="Aquamarine" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 7" Grid.Column="3" x:Name ="Celda848" MaxLength="1" BorderBrush="BlueViolet" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 7" Grid.Column="4" x:Name ="Celda858" MaxLength="1" BorderBrush="BlueViolet" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 7" Grid.Column="5" x:Name ="Celda868" MaxLength="1" BorderBrush="BlueViolet" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 7" Grid.Column="6" x:Name ="Celda879" MaxLength="1" BorderBrush="Orange" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 7" Grid.Column="7" x:Name ="Celda889" MaxLength="1" BorderBrush="Orange" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 7" Grid.Column="8" x:Name ="Celda899" MaxLength="1" BorderBrush="Orange" Background="LightGray"></TextBox>
             <!-- Row 9-->
-            <TextBox Grid.Row=" 8" Grid.Column="0" x:Name ="Celda917" MaxLength="1" BorderBrush="Aquamarine"></TextBox>
-            <TextBox Grid.Row=" 8" Grid.Column="1" x:Name ="Celda927" MaxLength="1" BorderBrush="Aquamarine"></TextBox>
-            <TextBox Grid.Row=" 8" Grid.Column="2" x:Name ="Celda937" MaxLength="1" BorderBrush="Aquamarine"></TextBox>
-            <TextBox Grid.Row=" 8" Grid.Column="3" x:Name ="Celda948" MaxLength="1" BorderBrush="BlueViolet"></TextBox>
-            <TextBox Grid.Row=" 8" Grid.Column="4" x:Name ="Celda958" MaxLength="1" BorderBrush="BlueViolet"></TextBox>
-            <TextBox Grid.Row=" 8" Grid.Column="5" x:Name ="Celda968" MaxLength="1" BorderBrush="BlueViolet"></TextBox>
-            <TextBox Grid.Row=" 8" Grid.Column="6" x:Name ="Celda979" MaxLength="1" BorderBrush="Orange"></TextBox>
-            <TextBox Grid.Row=" 8" Grid.Column="7" x:Name ="Celda989" MaxLength="1" BorderBrush="Orange"></TextBox>
-            <TextBox Grid.Row=" 8" Grid.Column="8" x:Name ="Celda999" MaxLength="1" BorderBrush="Orange"></TextBox>
+            <TextBox Grid.Row=" 8" Grid.Column="0" x:Name ="Celda917" MaxLength="1" BorderBrush="Aquamarine" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 8" Grid.Column="1" x:Name ="Celda927" MaxLength="1" BorderBrush="Aquamarine" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 8" Grid.Column="2" x:Name ="Celda937" MaxLength="1" BorderBrush="Aquamarine" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 8" Grid.Column="3" x:Name ="Celda948" MaxLength="1" BorderBrush="BlueViolet" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 8" Grid.Column="4" x:Name ="Celda958" MaxLength="1" BorderBrush="BlueViolet" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 8" Grid.Column="5" x:Name ="Celda968" MaxLength="1" BorderBrush="BlueViolet" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 8" Grid.Column="6" x:Name ="Celda979" MaxLength="1" BorderBrush="Orange" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 8" Grid.Column="7" x:Name ="Celda989" MaxLength="1" BorderBrush="Orange" Background="LightGray"></TextBox>
+            <TextBox Grid.Row=" 8" Grid.Column="8" x:Name ="Celda999" MaxLength="1" BorderBrush="Orange" Background="LightGray"></TextBox>
         </Grid>
 
-        <Grid Grid.Row="1"  Grid.Column="3" x:Name="Buttons">
+        <Grid Grid.Row="1"  Grid.Column="3" x:Name="Buttons" Grid.ColumnSpan="3" Margin="71,0,71,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
@@ -155,14 +157,15 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            
+
             <Button Grid.Column="0" Grid.Row="0" x:Name="SolveButton" Content="Resolver sudoku" Click="SolveButton_Click"></Button>
             <Button Grid.Column="0" Grid.Row="1" x:Name="SolveRow" Content="Solucionar por filas" Click="SolveRowButton_Click"></Button>
+            <Button Grid.Column="0" Grid.Row="8" x:Name="ClearButton" Content="Limpiar sudoku" Click="ClearButton_Click"></Button>
         </Grid>
 
-       
-        <Button Grid.Column="3" Grid.Row="2" x:Name="ClearButton" Content="Limpiar sudoku" Click="ClearButton_Click"></Button>
-        <Label Grid.Column="10" Grid.Row="0" x:Name="Error" ></Label>
+
         
+        <Label Grid.Column="5" Grid.Row="0" x:Name="Error" Margin="0,0,0,586" Grid.RowSpan="2" ></Label>
+
     </Grid>
 </Window>
